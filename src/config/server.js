@@ -14,7 +14,7 @@ server.use(allowCors)
 server.use(queryParser())
 
 server.listen(process.env.PORT || port, function() {
-    console.log(`BACKEND is running on port ${this.address().port} in ${server.settings.env} mode.`)
+    console.log(`BACKEND is running on port ${this.address().port}`)
 })
 
 module.exports = server
